@@ -5,7 +5,7 @@ import Markdown from "react-markdown"
 import postlist from "../../posts.json"
 import "./pages.css"
 
-const Casestudie = (props) => {
+const Casestudy = (props) => {
     // const id = parseInt(props.match.params.id)
     const { id } = useParams()
     if (!id) {
@@ -35,4 +35,4 @@ const Casestudie = (props) => {
     )
 }
 
-export default Casestudie
+export default Casestudy

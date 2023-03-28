@@ -21,6 +21,7 @@ function App() {
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/scroll" element={<Scroll />} />
                     <Route exact path="/post/:id" element={<Post />} />
+                    <Route exact path="/casestudy/:id" element={<Post />} />
                 </Routes>
             </BrowserRouter>
         </div>

@@ -112,6 +112,7 @@ const getPages = () => {
                 page = {
                     content: contents
                 }
+                console.log(page);
                 pagelist.push(page)
                 let data = JSON.stringify(pagelist)
                 fs.writeFileSync("src/pages.json", data)
@@ -177,7 +178,7 @@ const getCasestudies = () => {
                         return a.id < b.id ? 1 : -1
                     })
                     let data = JSON.stringify(sortedList)
-                    fs.writeFileSync("src/posts.json", data)
+                    fs.writeFileSync("src/casestudies.json", data)
                 }
             })
         })
