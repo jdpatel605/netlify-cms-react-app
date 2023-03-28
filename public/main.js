@@ -5,6 +5,7 @@ const dirPath = path.join(__dirname, "../posts")
 const dirPathPages = path.join(__dirname, "../src/content")
 const dirCPath = path.join(__dirname, "../casestudies")
 let postlist = []
+let casestudylist = []
 let pagelist = []
 
 const months = {
@@ -171,10 +172,10 @@ const getCasestudies = () => {
                     thumbnail: metadata.thumbnail,
                     content: content ? content : "No content given",
                 }
-                postlist.push(post)
+                casestudylist.push(post)
                 ilist.push(i)
                 if (ilist.length === files.length) {
-                    const sortedList = postlist.sort ((a, b) => {
+                    const sortedList = casestudylist.sort ((a, b) => {
                         return a.id < b.id ? 1 : -1
                     })
                     let data = JSON.stringify(sortedList)
@@ -187,5 +188,5 @@ const getCasestudies = () => {
 }
 
 getPosts()
-getCasestudies()
 getPages()
+getCasestudies()
