@@ -2,7 +2,7 @@ import React from "react"
 import { Navigate, useParams } from "react-router-dom"
 import Markdown from "react-markdown"
 // import Layout from "../components/layout"
-import postlist from "../../posts.json"
+import casestudylist from "../../casestudies.json"
 import "./pages.css"
 
 const Casestudy = (props) => {
@@ -13,7 +13,7 @@ const Casestudy = (props) => {
     }
     const fetchedPost = {}
     let postExists = false
-    postlist.forEach((post, i) => {
+    casestudylist.forEach((post, i) => {
         if (parseInt(id) === post.id) {
             fetchedPost.title = post.title ? post.title : "No title given"
             fetchedPost.date = post.date ? post.date : "No date given"
