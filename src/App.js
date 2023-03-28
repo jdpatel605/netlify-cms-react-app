@@ -9,6 +9,7 @@ import {
 
 import Home from "./components/pages/Home"
 import Post from "./components/pages/Post"
+import Scroll from "./components/pages/Scroll"
 
 import './assets/scss/App.scss';
 
@@ -18,6 +19,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route exact path="/" element={<Home />} />
+                    <Route exact path="/scroll" element={<Scroll />} />
                     <Route exact path="/post/:id" element={<Post />} />
                 </Routes>
             </BrowserRouter>
