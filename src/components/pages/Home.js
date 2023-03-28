@@ -12,6 +12,7 @@ const Home = () => {
 
     return (
         <div className="postlist">
+            <Link className="links" to={`/casestudies`}>Casestudies</Link>
             <h1 className="title">All Posts</h1>
             {postlist.length && 
                 postlist.map((post, i) => {

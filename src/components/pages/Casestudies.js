@@ -11,7 +11,7 @@ const Home = () => {
     })
 
     return (
-        <div className="casestudylist">
+        <div className="postlist">
             <h1 className="title">All Casestudies</h1>
             {casestudylist.length && 
                 casestudylist.map((post, i) => {
