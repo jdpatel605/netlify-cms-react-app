@@ -1,5 +1,5 @@
 ---
-title: This is a Test Post
+title: This is test post
 category: News
 author: Will Jay
 date: 2020-01-03T11:50:02.255Z
